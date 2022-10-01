@@ -1,4 +1,4 @@
-package test.java;
+package test.java.e2e;
 
 import test.java.GeneralActions.precons;
 import test.java.PageActions.home;
