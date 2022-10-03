@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f93391a7-f3c8-42ac-83c6-a88c5d9bbf50" name="Changes" comment="Day_1&#10;Acing issues with driver etc. Not showing any errors but program fails to perform any actions.">
-      <change beforePath="$PROJECT_DIR$/src/test/java/buyBackpack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/buyBackpack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GeneralActions/precons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GeneralActions/precons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageActions/home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageActions/home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/buyBackpack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/buyBackpack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2FXe2FlI6Zg2GwiCFKxME0giOVk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -35,8 +41,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
@@ -76,7 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664649687381</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Day_1&#10;Acing issues with driver etc. Not showing any errors but program fails to perform any actions.">
+      <created>1664650070119</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664650070119</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Day_1&#10;Acing issues with driver etc. Not showing any errors but program fails to perform any actions.">
+      <created>1664650088537</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664650088537</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

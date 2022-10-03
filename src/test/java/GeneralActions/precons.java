@@ -15,7 +15,6 @@ import java.util.Properties;
 
 public class precons {
     public WebDriver driver;
-
     public void initializeDriver() throws IOException {
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//GlobalData.properties");

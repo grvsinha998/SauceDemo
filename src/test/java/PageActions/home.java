@@ -1,15 +1,16 @@
 package test.java.PageActions;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import test.java.GeneralActions.precons;
 
-public class home extends precons {
-
-    public home() {
-        PageFactory.initElements(driver, this);
+public class home extends precons{
+    WebDriver driver;
+    public home(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(this.driver, this);
     }
 
     @FindBy(id = "user-name")
@@ -18,16 +19,11 @@ public class home extends precons {
     WebElement pwd;
     @FindBy(id = "login-button")
     WebElement loginBtn;
-    @FindBy(xpath = "//div[text()='secret_sauce']")
-    WebElement sitePwd;
 
-    public void Login(String enterUserName) {
-        //Only takes Username input.
-        //Password is fetched from the website UI.
+    public void Login(String enterUserName, String enterPassword) {
         userName.sendKeys(enterUserName);
-        pwd.sendKeys(sitePwd.getText());
+        pwd.sendKeys(enterPassword);
         loginBtn.click();
-        waitForElementToAppear(By.xpath("//span[text()='Products']"));
     }
 
 }
