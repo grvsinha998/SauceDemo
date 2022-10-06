@@ -19,13 +19,13 @@ public class inventory extends precons{
     @FindBy(className = "inventory_item_name")
     List<WebElement> itemsName;
 
-    public void addItemToCart(String inputItemName) {
+    public void addItemToCart(String inputItemName) throws InterruptedException {
         String itemXpath = "//div[@class='inventory_item_name'][contains(text(),'" + inputItemName + "')]/parent::a/parent::div/following-sibling::div/button";
         for (WebElement itemName:itemsName) {
             String item = itemName.getText();
             if (item.contains(inputItemName)) {
-                System.out.print(itemXpath);
                 driver.findElement(By.xpath(itemXpath)).click();
+                Thread.sleep(1000);
             }
         }
     }
