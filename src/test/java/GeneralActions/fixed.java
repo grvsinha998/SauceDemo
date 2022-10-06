@@ -56,11 +56,12 @@ public class fixed extends precons {
         }
     }
 
+    public void getCartCount() {
+        System.out.print("Products in Cart: " + cartCount.getText());
+    }
+
     public void viewCart() {
         shoppingCart.click();
     }
 
-    public void getCartCount() {
-        System.out.print("Products in Cart: " + cartCount.getText());
-    }
 }

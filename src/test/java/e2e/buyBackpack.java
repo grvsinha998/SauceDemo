@@ -24,6 +24,7 @@ public class buyBackpack {
         fixed fx = new fixed(pc.driver);
         fx.openHamburgerMenu("All Items");
         fx.getCartCount();
+        fx.viewCart();
 
         pc.suiteTearDown();
     }
