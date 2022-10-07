@@ -1,13 +1,12 @@
 package test.java.GeneralActions;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Objects;
 
 public class fixed extends precons {
     WebDriver driver;
@@ -19,8 +18,6 @@ public class fixed extends precons {
     //Hamburger Menu Elements
     @FindBy(id = "react-burger-menu-btn")
     WebElement menuButton;
-    @FindBy(className = "bm-item-list")
-    WebElement itemList;
     @FindBy(id = "inventory_sidebar_link")
     WebElement allItems;
     @FindBy(id = "about_sidebar_link")
@@ -37,8 +34,18 @@ public class fixed extends precons {
     WebElement shoppingCart;
     @FindBy(className = "shopping_cart_badge")
     WebElement cartCount;
+
+    //Sorting Menu
     @FindBy(className = "product_sort_container")
-    WebElement sortingOptions;
+    WebElement sortOption;
+
+    //Footer Elements
+    @FindBy(xpath = "//a[@href='https://twitter.com/saucelabs']")
+    WebElement twitter;
+    @FindBy(xpath = "//a[@href='https://www.facebook.com/saucelabs']")
+    WebElement facebook;
+    @FindBy(xpath = "//a[@href='https://www.linkedin.com/company/sauce-labs/']")
+    WebElement linkedIn;
 
     public void openHamburgerMenu(String option) throws InterruptedException {
         menuButton.click();
@@ -62,6 +69,22 @@ public class fixed extends precons {
 
     public void viewCart() {
         shoppingCart.click();
+    }
+
+    public void sortProducts(String sortBy) throws InterruptedException {
+        Select dropdown = new Select(sortOption);
+        dropdown.selectByVisibleText(sortBy);
+        Thread.sleep(2000);
+    }
+
+    public void goToSocial(String social) {
+        if(Objects.equals(social.toLowerCase(), "twitter")) {
+            twitter.click();
+        } else if (Objects.equals(social.toLowerCase(), "facebook")) {
+            facebook.click();
+        } else {
+            linkedIn.click();
+        }
     }
 
 }

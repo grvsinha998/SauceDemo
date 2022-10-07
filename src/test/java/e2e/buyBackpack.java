@@ -23,6 +23,7 @@ public class buyBackpack {
 
         fixed fx = new fixed(pc.driver);
         fx.openHamburgerMenu("All Items");
+        fx.sortProducts("Price (low to high)");
         fx.getCartCount();
         fx.viewCart();
 
