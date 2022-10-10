@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f93391a7-f3c8-42ac-83c6-a88c5d9bbf50" name="Changes" comment="Day_3&#10;Fixed issue from day_1 by inheriting the Webdriver from the precons.">
+    <list default="true" id="f93391a7-f3c8-42ac-83c6-a88c5d9bbf50" name="Changes" comment="...">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageActions/cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GeneralActions/fixed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GeneralActions/fixed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageActions/inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageActions/inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/buyBackpack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/buyBackpack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665115734128</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="...">
+      <created>1665166914759</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665166914759</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Day_1&#10;Acing issues with driver etc. Not showing any errors but program fails to perform any actions." />
     <MESSAGE value="Day_3&#10;Fixed issue from day_1 by inheriting the Webdriver from the precons." />
-    <option name="LAST_COMMIT_MESSAGE" value="Day_3&#10;Fixed issue from day_1 by inheriting the Webdriver from the precons." />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>
