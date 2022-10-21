@@ -1,5 +1,6 @@
 package test.java.e2e;
 
+import org.testng.annotations.Test;
 import test.java.GeneralActions.fixed;
 import test.java.GeneralActions.precons;
 import test.java.PageActions.*;
@@ -7,35 +8,30 @@ import test.java.PageActions.*;
 import java.io.IOException;
 
 public class EndToEndTests extends precons{
-    public static void main(String[] args) throws IOException, InterruptedException {
-        precons pc = new precons();
-        pc.initializeDriver();
-        pc.LaunchApp();
-
-        home hp = new home(pc.driver);
+    @Test
+    public void buyAll() throws InterruptedException {
+        home hp = new home(driver);
         hp.Login("standard_user","secret_sauce");
 
-        inventory inv = new inventory(pc.driver);
+        inventory inv = new inventory(driver);
         inv.addAllItems();
 
-        fixed fx = new fixed(pc.driver);
+        fixed fx = new fixed(driver);
         fx.sortProducts("Price (low to high)");
         fx.getCartCount();
         fx.viewCart();
 
-        cart ct = new cart(pc.driver);
+        cart ct = new cart(driver);
         ct.returnItemsInCart();
         ct.checkOut();
 
-        checkout co = new checkout(pc.driver);
+        checkout co = new checkout(driver);
         co.enterDetailsToContinue("Gaurav","Sinha","560067");
 
-        overview ov = new overview(pc.driver);
+        overview ov = new overview(driver);
         ov.getOrderOverview();
 
-        confirmation cf = new confirmation(pc.driver);
+        confirmation cf = new confirmation(driver);
         cf.retrieveConfirmation();
-
-        pc.suiteTearDown();
     }
 }

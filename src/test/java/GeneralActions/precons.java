@@ -7,6 +7,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,6 +18,7 @@ import java.util.Properties;
 
 public class precons {
     public WebDriver driver;
+    public precons pc;
     public void initializeDriver() throws IOException {
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//GlobalData.properties");
@@ -33,7 +37,9 @@ public class precons {
         }
     }
 
-    public void LaunchApp() throws InterruptedException {
+    @BeforeMethod
+    public void LaunchApp() throws InterruptedException, IOException {
+        initializeDriver();
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
         Thread.sleep(2000);
@@ -44,6 +50,7 @@ public class precons {
         wait.until(ExpectedConditions.visibilityOfElementLocated(findElement));
     }
 
+    @AfterMethod
     public void suiteTearDown() {
         driver.quit();
     }
